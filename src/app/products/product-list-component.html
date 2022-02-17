@@ -47,7 +47,7 @@
           [title] = 'product.productName'
           [style.width.px] = 'imageWidth'
           [style.margin.px] = 'imageMargin'></td>
-          <td>{{product.productName | uppercase}}</td>
+          <td>{{product.productName | currency: 'USD' : 'symbol': '1.2-2'}}</td>
           <td>{{product.productCode}}</td>
           <td>{{product.releaseDate}}</td>
           <td>{{product.price}}</td>
