@@ -12,7 +12,7 @@ export class ProductListComponent{
     showImage = false;
     hideImage = 'Hide Image'
     showTheImage = 'Show Image'
-    listFilter = 'cart'
+    listFilter = ''
     products: any[] = [
         {
           "productId": 2,
