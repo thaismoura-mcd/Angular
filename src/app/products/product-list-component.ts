@@ -1,6 +1,7 @@
 import { style } from "@angular/animations";
 import { componentFactoryName } from "@angular/compiler";
-import { Component } from "@angular/core";
+import { LifecycleHooks } from "@angular/compiler/src/lifecycle_reflector";
+import { Component, OnInit } from "@angular/core";
 import { IProduct } from "./IProduct";
 
 @Component({
@@ -8,7 +9,8 @@ import { IProduct } from "./IProduct";
     templateUrl: './product-list-component.html',
     styleUrls: ['./product-list.component.css']
 })
-export class ProductListComponent{
+export class ProductListComponent implements OnInit{
+  
     pageTitle = 'Product List'
     imageWidth =50;
     imageMargin=2;
@@ -52,5 +54,8 @@ export class ProductListComponent{
       toggleImage(): void{
         this.showImage = !this.showImage;
       }
-      
+
+      ngOnInit(): void {
+        console.log("Method not implemented.");
+      }     
 }
