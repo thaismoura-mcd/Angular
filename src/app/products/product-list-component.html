@@ -21,7 +21,7 @@
       <thead>
              <tr>
                 <th>
-                <button type="button" class="btn btn-primary" (click)="toggleImage()">{{showImage ? 'Hide': 'Show'}} Image</button>
+                <button type="button" class="btn btn-primary" (click)="toggleImage()">{{showImage ? 'Show': 'Hide'}} Image</button>
              </th>
              <th>
                 Product
@@ -48,10 +48,10 @@
           [style.width.px] = 'imageWidth'
           [style.margin.px] = 'imageMargin'></td>
           <td>{{product.productName}}</td>
-          <td>{{product.productCode}}</td>
+          <td>{{product.productCode | convertToSpaces : '-'}}</td>
           <td>{{product.releaseDate}}</td>
-          <td>{{product.price | currency:'USD':'symbol':'1.2-2'}}</td>
-          <td>{{product.starRating}}</td>
+          <td>{{product.price | currency:'USD':'symbol':'1-2.2'}}</td>
+          <td><starComponent [rating] = 'product.starRating'></starComponent></td>
         </tr>
       </tbody>
     </table>

@@ -4,3 +4,11 @@
 div {
   cursor: pointer;
 }
+.nowrap {
+  white-space: nowrap;
+}
+
+span
+{
+    white-space:nowrap
+}
