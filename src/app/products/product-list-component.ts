@@ -25,16 +25,16 @@ export class ProductListComponent implements OnInit{
     hideImage = 'Hide Image'
     showTheImage = 'Show Image'
     listFilter = ''
-    products: IProduct[] = [];
+    products$: Observable<IProduct[]> | undefined;
 
       toggleImage(): void{
         this.showImage = !this.showImage;
       }
   
       ngOnInit(): void {
-        this.productService.getProducts().subscribe({
-          next: products => this.products = products
-        });
+        {
+         this.products$ = this.productService.getProducts();
+        };
         this.dogsService.getDogs().subscribe({
           next: pageTitle => this.pageTitle = pageTitle
         }); 
