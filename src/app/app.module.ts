@@ -10,6 +10,7 @@ import { convertToSpacesPipe } from './shared/convert-to-space-pipe';
 import { StarComponent } from './shared/star.component';
 import { ProductsdetailComponent } from './products/productsdetail.component';
 import { WelcomeComponent } from './home/welcome.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,12 @@ import { WelcomeComponent } from './home/welcome.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot ([{path: 'products', component: ProductListComponent},
+                          {path: 'products/:id', component: ProductsdetailComponent},
+                          {path: 'welcome', component: WelcomeComponent},
+                          {path: '', redirectTo: 'welcome', pathMatch: 'full'},
+                          {path: '**', redirectTo: 'welcome', pathMatch: 'full'}]) //toDo: Create a NotFoundComponent
   ],
   bootstrap: [AppComponent]
 })
