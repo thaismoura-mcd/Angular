@@ -2,7 +2,7 @@
   {
     "productId": 1,
     "productName": "Leaf Rake",
-    "productCode": "GDN-0011",
+    "productCode": "GDN-00-11",
     "releaseDate": "March 19, 2021",
     "description": "Leaf rake with 48-inch wooden handle.",
     "price": 19.95,
@@ -12,7 +12,7 @@
   {
     "productId": 2,
     "productName": "Garden Cart",
-    "productCode": "GDN-0023",
+    "productCode": "GDN-00-23",
     "releaseDate": "March 18, 2021",
     "description": "15 gallon capacity rolling garden cart",
     "price": 32.99,
@@ -22,7 +22,7 @@
   {
     "productId": 5,
     "productName": "Hammer",
-    "productCode": "TBX-0048",
+    "productCode": "TBX-00-48",
     "releaseDate": "May 21, 2021",
     "description": "Curved claw steel hammer",
     "price": 8.9,
@@ -32,7 +32,7 @@
   {
     "productId": 8,
     "productName": "Saw",
-    "productCode": "TBX-0022",
+    "productCode": "TBX-00-22",
     "releaseDate": "May 15, 2021",
     "description": "15-inch steel blade hand saw",
     "price": 11.55,
